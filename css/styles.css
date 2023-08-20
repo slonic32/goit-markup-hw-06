@@ -101,9 +101,9 @@ button {
 }
 
 .text-header-large {
-  font-size: 36px;
+  font-size: 56px;
   font-weight: 700;
-  line-height: 1.11;
+  line-height: 1.07;
   letter-spacing: 0.02em;
 }
 
@@ -199,12 +199,6 @@ button {
   display: none;
 }
 
-.header-address-flex {
-}
-
-.header-link {
-}
-
 .header-border {
   background: var(--color-WHITE);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -213,22 +207,8 @@ button {
   border-bottom: 1px solid var(--color-cornflower);
 }
 
-.header-navigation-link {
-}
-
-.header-navigation-link:hover,
-.header-navigation-link:focus {
-}
-
 .header-address {
   display: none;
-}
-
-.header-address-link {
-}
-
-.header-address-link:hover,
-.header-address-link:focus {
 }
 
 .button-oder {
@@ -298,6 +278,11 @@ button {
   margin: auto;
 }
 
+.section-hero .text-header-large {
+  font-size: 36px;
+  line-height: 1.11;
+}
+
 .section-solutions {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -305,15 +290,19 @@ button {
 
 .section-solutions-header {
   color: var(--color-Navy-blue);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
+}
+
+.section-solutions .text-header-small {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  
 }
 
 .section-solutions-flex {
@@ -331,9 +320,6 @@ button {
   display: none;
 }
 
-.section-solutions-icon {
-}
-
 .section-solutions-item .text-body {
   font-weight: 500;
 }
@@ -342,19 +328,9 @@ button {
   display: none;
 }
 
-.section-wedo-header {
-}
-
-.section-wedo-flex {
-}
-
-.section-wedo-item {
-}
-
 .section-team {
   background-color: var(--color-CLOUD);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 96px 82px;
 }
 
 .section-team-header-big {
@@ -648,12 +624,6 @@ button {
   border-left: 1px solid var(--color-cornflower);
   border-right: 1px solid var(--color-cornflower);
   border-bottom: 1px solid var(--color-cornflower);
-}
-
-.current {
-}
-
-.current::after {
 }
 
 .overlay-box {
@@ -981,9 +951,6 @@ button {
   background-color: var(--color-OCEAN);
 }
 
-.mobile-menu-social {
-}
-
 @media (max-width: 767px) {
   .header-menu-flex {
     display: none;
@@ -1009,7 +976,9 @@ button {
 @media (min-width: 1158px) {
   .text-header-large {
     font-size: 56px;
+    font-weight: 700;
     line-height: 1.07;
+    letter-spacing: 0.02em;
   }
 
   .container {
