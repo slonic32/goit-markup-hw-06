@@ -574,6 +574,12 @@ button {
   padding: 96px 0;
 }
 
+@media (min-width: 768px) {
+  .section-customers .container {
+    padding: 0 108px;
+  }
+}
+
 .section-customers-header {
   color: var(--color-Navy-blue);
   text-align: center;
@@ -591,6 +597,16 @@ button {
 .section-customers-item {
   flex-basis: calc((100% - 16px) / 2);
   height: 88px;
+}
+
+@media (min-width: 768px) {
+  .section-customers-flex {
+    column-gap: 24px;
+  }
+
+  .section-customers-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
 }
 
 .section-customers-icon-link {
@@ -640,6 +656,25 @@ button {
   max-width: 268px;
 }
 
+@media (min-width: 768px) {
+  .section-footer .container {
+    padding: 0 0 0 108px;
+  }
+
+  .section-footer-flex {
+    column-gap: 24px;
+    row-gap: 72px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  .section-footer-block-logo {
+    max-width: 264px;
+  }
+}
+
 .section-footer-text {
   color: var(--color-CLOUD);
 }
@@ -670,6 +705,16 @@ button {
   color: var(--color-WHITE);
   margin-bottom: 16px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .logo-footer {
+    text-align: left;
+  }
+
+  .section-footer-icons-text {
+    text-align: left;
+  }
 }
 
 .section-footer-list-icons {
@@ -720,6 +765,30 @@ button {
   gap: 16px;
   flex-direction: column;
   align-items: center;
+}
+
+.subscribe-form-label {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .section-subscribe-form {
+    width: 453px;
+  }
+
+  .subscribe-form-text {
+    text-align: left;
+  }
+
+  .subscribe-form {
+    gap: 24px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .subscribe-form-label {
+    width: 264px;
+  }
 }
 
 .subscribe-form-input {
@@ -776,21 +845,8 @@ button {
   margin-left: 16px;
 }
 
-.subscribe-form-label {
-  width: 100%;
-}
-
 .section-portfolio {
   padding: 48px 0;
-}
-
-.section-portfolio-header {
-  color: var(--color-Navy-blue);
-  margin-bottom: 8px;
-}
-
-.section-portfolio-item-text {
-  color: var(--color-SLATE);
 }
 
 .section-portfolio-filter-flex {
@@ -801,6 +857,21 @@ button {
   justify-content: left;
   flex-wrap: wrap;
   margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .section-portfolio {
+    padding: 64px 0 96px 0;
+  }
+
+  .section-portfolio-filter-flex {
+    gap: 24px;
+
+    width: 586px;
+    justify-content: space-between;
+
+    margin: 0 auto 64px auto;
+  }
 }
 
 .button-filter {
@@ -833,12 +904,25 @@ button {
 }
 
 .section-portfolio-item {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .section-portfolio-table-flex {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .section-portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 .section-portfolio-link {
   display: block;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-portfolio-link:hover,
@@ -846,16 +930,6 @@ button {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transform: translateY(0%);
-}
-
-.section-portfolio-item-div {
-  padding: 32px 16px;
-  border-left: 1px solid var(--color-CLOUD);
-  border-right: 1px solid var(--color-CLOUD);
-  border-bottom: 1px solid var(--color-CLOUD);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .overlay-box {
@@ -887,6 +961,25 @@ button {
 
 .overlay-text {
   color: var(--color-CLOUD);
+}
+
+.section-portfolio-item-div {
+  padding: 32px 16px;
+  border-left: 1px solid var(--color-CLOUD);
+  border-right: 1px solid var(--color-CLOUD);
+  border-bottom: 1px solid var(--color-CLOUD);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.section-portfolio-header {
+  color: var(--color-Navy-blue);
+  margin-bottom: 8px;
+}
+
+.section-portfolio-item-text {
+  color: var(--color-SLATE);
 }
 
 .is-hidden {
@@ -921,9 +1014,9 @@ button {
 
 .modal-window {
   position: absolute;
-  top: 50%;
+  top: 96px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   max-width: 392px;
   width: 100%;
 
@@ -935,6 +1028,13 @@ button {
   transition-delay: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 16px 24px 16px;
+}
+
+@media (min-width: 768px) {
+  .modal-window {
+    max-width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
 }
 
 .modal-button {
