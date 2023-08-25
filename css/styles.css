@@ -761,8 +761,10 @@ button {
 }
 
 @media (min-width: 1158px) {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  .section-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .section-footer .container {
