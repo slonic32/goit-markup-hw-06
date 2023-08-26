@@ -183,7 +183,7 @@ button {
 .header-border {
   min-width: 100%;
   background: var(--color-WHITE);
-  border: 1px solid var(--color-cornflower);
+  border-bottom: 1px solid var(--color-cornflower);
 
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -553,9 +553,9 @@ button {
   padding: 96px 0;
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
+@media (max-width: 1157px) {
   .section-team .container {
-    padding: 0 108px;
+    padding: 0;
   }
 }
 
@@ -613,7 +613,7 @@ button {
 
 @media (min-width: 768px) {
   .section-team-flex {
-    max-width: 100%;
+    max-width: 552px;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 64px;
@@ -628,6 +628,10 @@ button {
 @media (min-width: 1158px) {
   .section-team-item {
     flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .section-team-flex {
+    max-width: 100%;
   }
 }
 
@@ -689,12 +693,6 @@ button {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
-  .section-customers .container {
-    padding: 0 108px;
-  }
-}
-
 .section-customers-header {
   color: var(--color-Navy-blue);
   text-align: center;
@@ -721,6 +719,16 @@ button {
 
   .section-customers-item {
     flex-basis: calc((100% - 48px) / 3);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  .section-customers .container {
+    padding: 0;
+  }
+  .section-customers-flex {
+    max-width: 552px;
+    margin: 0 auto;
   }
 }
 
@@ -784,11 +792,14 @@ button {
   max-width: 268px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1157px) {
   .section-footer .container {
+    max-width: 552px;
     padding: 0;
   }
+}
 
+@media (min-width: 768px) {
   .section-footer-flex {
     column-gap: 24px;
     row-gap: 72px;
@@ -800,7 +811,6 @@ button {
 
   .section-footer-block-logo {
     max-width: 264px;
-    margin-left: 108px;
   }
 }
 
@@ -927,7 +937,6 @@ button {
 @media (min-width: 768px) {
   .section-subscribe-form {
     width: 453px;
-    margin-left: 108px;
   }
 
   .subscribe-form-text {
